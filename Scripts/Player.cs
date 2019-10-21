@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
 
     void FireLaser()
     {
-        Vector3 laserOffset = new Vector3(transform.position.x, transform.position.y + 0.8f, 0);
+        Vector3 laserOffset = new Vector3(transform.position.x, transform.position.y + 1.05f, 0);
         _canFire = Time.time + _fireRate;
         Instantiate(_laserPrefab, laserOffset, Quaternion.identity);
     }
